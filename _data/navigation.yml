@@ -1,11 +1,11 @@
 # main links links
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "米德智能学院"
+    url: /general/
 
-  - title: "Teaching"
-    url: /teaching/
-    
+  - title: "课程内容"
+    url: /lectures/
+
 
   # - title: "Blog Posts"
   #   url: /year-archive/
