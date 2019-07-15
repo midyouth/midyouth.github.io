@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "MidYouth is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "米德智能学院"
 excerpt: "About me"
 author_profile: true
 redirect_from:
@@ -8,8 +8,16 @@ redirect_from:
   - /about.html
 ---
 
-
-
-For more info
+米德青少年领袖峰会
 ------
-More info about configuring MidYouth can be found in [the guide](https://MidYouth.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+**青少年领袖峰会**（Youth Leadership Summit）是为青少年学生提供实践式的综合素质提升平台。作为米德青年青少年领袖培养体系的核心部分，青领峰会涵盖包括商业、科技、政治、辩论、公益五大领域的学生课程与赛事。2015年始办于教育大省山东省，随后迅速覆盖全省乃至全国各地，并在加拿大设立中加会场。
+
+**第四届青少年领袖峰会** (The Forth Youth Leaders Summit)以“创想未来” 为主题，三大课程体系 “青领创业研习社”、“米德智能学院”、“英语创新研习社” 并行开展， 给予参与者更多选择，赋予与会者更优质的体验，主线课程之外还有团队破冰、米德论坛、浮蜓舞会等丰富多彩的体验活动。学生将通过学术培训、思维碰撞与亲身体验，提升学术水平，提高实践能力，丰富社交经验，结识同道伙伴，拓宽领袖视野，培养世界眼光。
+
+米德智能学院
+------
+**课程背景**
+自第三次工业革命后，信息技术的应用渗透到了全社会的各个领域各个层面，编程成为了一项提升个人整体能力与发展视野的一项重要技能；而即人工智能为发展驱动力的第四次工业革命即将全面展开，更是将编程技能提升到了更高的高度。我国务在《新一代人工智能发展规划》中倡议在中小学阶段设置人工智能相关课程，实施全民智能教育项目，在中小学阶段设置人工智能相关课程，以培养未来社会的工业人才。
+
+**课程介绍**
+米德智能学院八期课程以海外谷歌Python开源课程为基础，以国内最高水平的操作系统Deepin－Linux以及全球最大开源社区Github为工具，帮助学生打开编程与人工智能的大门。八期课程中将由世界各大名校计算机学生以及专业讲师进行授课。通过模块化课程设计以及实践式学习方式学生将会在每一期课程中掌握一个核心技能，并在课后由助教按照小组进行一对一指导，完成一个实践性小型项目。米德智能学院致力于通过八期课程提高学生人工智能创意思维潜能，培养具备STEM素养的中学人才。
