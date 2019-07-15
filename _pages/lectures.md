@@ -5,4 +5,4 @@ permalink: /lectures/
 author_profile: true
 ---
 
-testing content
+即将上线，敬请期待！
