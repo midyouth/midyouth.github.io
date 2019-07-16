@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "课程内容"
-permalink: /lectures/
+title: "项目"
+permalink: /project/
 author_profile: true
 ---
