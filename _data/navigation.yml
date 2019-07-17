@@ -13,6 +13,8 @@ main:
   - title: "结业项目"
     url: /project/
 
+  - title: "Wiki"
+    url: /wiki/
 
   # - title: "Blog Posts"
   #   url: /year-archive/
