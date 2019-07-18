@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html class="theme theme-white">
+<head>
+<meta charset="utf-8">
+<title>第二期 深度操作系统与开源社区</title>
+<link href="https://www.zybuluo.com/static/assets/template-theme-white.css" rel="stylesheet" media="screen">
+<style type="text/css">
+
+#wmd-preview h1  {
+    color: #0077bb; /* 将标题改为蓝色 */
+}</style>
+</head>
+<body class="theme theme-white">
+<div id="wmd-preview" class="wmd-preview wmd-preview-full-reader"><div class="md-section-divider"></div><div class="md-section-divider"></div><h1 data-anchor-id="6pv6" id="第二期-深度操作系统与开源社区">第二期 深度操作系统与开源社区</h1><p data-anchor-id="z6o6"><code>MidYouth</code></p><hr><p data-anchor-id="rhwe"><div class="toc"><div class="toc">
+<ul>
+<li><a href="#第二期-深度操作系统与开源社区">第二期 深度操作系统与开源社区</a><ul>
+<li><a href="#一课程目标">一、课程目标</a></li>
+<li><a href="#二课程任务">二、课程任务</a><ul>
+<li><a href="#1-linux文件与目录">1. Linux文件与目录</a><ul>
+<li><a href="#11-目录">1.1 目录</a></li>
+<li><a href="#12-路径">1.2 路径</a></li>
+<li><a href="#13-文件的ownership">1.3 文件的ownership</a></li>
+</ul>
+</li>
+<li><a href="#2-linux相关命令">2. Linux相关命令</a><ul>
+<li><a href="#21-命令的基本构成">2.1 命令的基本构成</a></li>
+<li><a href="#22-目录相关命令">2.2 目录相关命令：</a></li>
+<li><a href="#23-文件相关命令">2.3 文件相关命令：</a></li>
+<li><a href="#24-常用快捷键与history命令">2.4 常用快捷键与history命令</a></li>
+<li><a href="#25-符号">2.5 "&gt;"符号</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</p><hr><div class="md-section-divider"></div><h2 data-anchor-id="errc" id="一课程目标"><strong>一、课程目标</strong></h2><ol data-anchor-id="pzxm">
+<li>了解Linux基本内容，明白Linux内核及其操作系统的理论。</li>
+<li>掌握Linux基本命令行指令及使用。</li>
+<li>学习编写shell脚本，并能够如何在终端中运行。</li>
+<li>学习使用开源平台GitHub。</li>
+</ol><div class="md-section-divider"></div><h2 data-anchor-id="ju8s" id="二课程任务"><strong>二、课程任务</strong></h2><div class="md-section-divider"></div><h3 data-anchor-id="iqpf" id="1-linux文件与目录">1. Linux文件与目录</h3><div class="md-section-divider"></div><h4 data-anchor-id="di6q" id="11-目录">1.1 目录</h4><p data-anchor-id="0xwt">我们知道Linux的目录结构为<strong>树状结构</strong>，最顶级的目录为根目录 /。 <br>
+其他目录通过挂载可以将它们添加到树中，通过解除挂载可以移除它们。</p><div class="md-section-divider"></div><h4 data-anchor-id="5i7b" id="12-路径">1.2 路径</h4><p data-anchor-id="v0ic">对一个目录路径对表示有两种方法： <br>
+<strong>绝对路径</strong>： <br>
+路径的写法，由根目录 / 写起，例如： </p><blockquote data-anchor-id="41br" class="white-blockquote">
+  <p>$ /usr/share/doc </p>
+</blockquote><p data-anchor-id="e8dw">这个目录。 <br>
+<strong>相对路径</strong>： <br>
+路径的写法，不是由 / 写起，例如由 /usr/share/doc 要到 /usr/share/man 底下时，可以写成：</p><blockquote data-anchor-id="m8kb" class="white-blockquote">
+  <p>$ cd ../man </p>
+</blockquote><p data-anchor-id="xw8d">这就是相对路径的写法啦！</p><div class="md-section-divider"></div><h4 data-anchor-id="4k3w" id="13-文件的ownership">1.3 文件的ownership</h4><p data-anchor-id="29fv">我们电脑中的每一个文件/文件夹都有着它自己的拥有者和用户组，我们通过命令</p><blockquote data-anchor-id="8mxs" class="white-blockquote">
+  <p>$ ls -lah</p>
+</blockquote><p data-anchor-id="x301">可以查看当前工作路径下所有文件以及他们的所有者、群组和权限，如下： <br>
+<img src="http://static.zybuluo.com/shawnpang/mfgn6a6hj2o6rixq0pnedv0u/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-07-18%20%E4%B8%8A%E5%8D%888.50.29.png" alt="ownership" title=""></p><p data-anchor-id="j2eg">其中第一列表示权限，apple一列表示文件的所有者，staff一列表示文件所在的群组，7 17 15:45一列表示上一次的修改时间，最后一列表示文件或目录的名字，其他不要求掌握。</p><blockquote data-anchor-id="fpa7" class="white-blockquote">
+  <p><strong>选做：查询权限一列的十个字母分别代表什么含义</strong></p>
+</blockquote><div class="md-section-divider"></div><h3 data-anchor-id="dv4u" id="2-linux相关命令">2. Linux相关命令</h3><div class="md-section-divider"></div><h4 data-anchor-id="2tzt" id="21-命令的基本构成">2.1 命令的基本构成</h4><blockquote data-anchor-id="sla0" class="white-blockquote">
+  <p>$ ls（命令体）  -l（选项）  /var（参数/对象） </p>
+</blockquote><div class="md-section-divider"></div><h4 data-anchor-id="unre" id="22-目录相关命令">2.2 目录相关命令：</h4><table data-anchor-id="bohl" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th style="text-align:left;">命令</th>
+ <th style="text-align:center;">用法(注意空格)</th>
+ <th style="text-align:right;">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td style="text-align:left;">cd</td>
+ <td style="text-align:center;">cd ./目录1/目录2</td>
+ <td style="text-align:right;">进入当前目录下的子目录（相对路径）</td>
+</tr>
+<tr>
+ <td style="text-align:left;"></td>
+ <td style="text-align:center;">cd ..</td>
+ <td style="text-align:right;">返回上一级目录</td>
+</tr>
+<tr>
+ <td style="text-align:left;">pwd</td>
+ <td style="text-align:center;">pwd</td>
+ <td style="text-align:right;">显示当前工作路径</td>
+</tr>
+<tr>
+ <td style="text-align:left;">ls</td>
+ <td style="text-align:center;">ls 选项 目录或文件名</td>
+ <td style="text-align:right;">列出目录下所有的文件</td>
+</tr>
+<tr>
+ <td style="text-align:left;">file</td>
+ <td style="text-align:center;">file 文件或目录</td>
+ <td style="text-align:right;">显示文件的类型（目录、text、zip、shell脚本等）</td>
+</tr>
+<tr>
+ <td style="text-align:left;">mkdir</td>
+ <td style="text-align:center;">mkdir dir1</td>
+ <td style="text-align:right;">创建目录(dir1)</td>
+</tr>
+</tbody></table><div class="md-section-divider"></div><h4 data-anchor-id="dtb8" id="23-文件相关命令">2.3 文件相关命令：</h4><table data-anchor-id="rm15" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th style="text-align:left;">命令</th>
+ <th style="text-align:center;">用法(注意空格)</th>
+ <th style="text-align:right;">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td style="text-align:left;">touch</td>
+ <td style="text-align:center;">touch a.txt</td>
+ <td style="text-align:right;">创建文件a.txt（文件类型也可以是sh、py、word等）</td>
+</tr>
+<tr>
+ <td style="text-align:left;">rm</td>
+ <td style="text-align:center;">rm 文件</td>
+ <td style="text-align:right;">删除文件(注意写文件名时一定要带上后缀)</td>
+</tr>
+<tr>
+ <td style="text-align:left;">mv</td>
+ <td style="text-align:center;">mv 文件或目录1 文件或目录2</td>
+ <td style="text-align:right;">移动或者重命名一个文件或者目录（存在即移动目录或覆盖文件，不存在即改名）</td>
+</tr>
+<tr>
+ <td style="text-align:left;"></td>
+ <td style="text-align:center;">mv /目录1/目录2/文件1 /目录1/文件或目录2</td>
+ <td style="text-align:right;">移动文件1到目录1下并改名为文件2（若为目录则为移动文件1到目录2下）</td>
+</tr>
+<tr>
+ <td style="text-align:left;">cp</td>
+ <td style="text-align:center;">cp -i /目录1/目录或文件 /目录1/目录2/</td>
+ <td style="text-align:right;">复制目录（或文件）到目录2下（选项i表示覆盖前询问）</td>
+</tr>
+<tr>
+ <td style="text-align:left;">cat</td>
+ <td style="text-align:center;">cat -n 文件名</td>
+ <td style="text-align:right;">显示文件内容，连行号一起显示</td>
+</tr>
+<tr>
+ <td style="text-align:left;">head</td>
+ <td style="text-align:center;">head -n 文件名</td>
+ <td style="text-align:right;">显示文件头n行内容，n指定显示多少行</td>
+</tr>
+<tr>
+ <td style="text-align:left;">tail</td>
+ <td style="text-align:center;">tail -n 文件名</td>
+ <td style="text-align:right;">显示文件尾几行内容,n指定显示多少行</td>
+</tr>
+<tr>
+ <td style="text-align:left;">nano</td>
+ <td style="text-align:center;">nano 文件名</td>
+ <td style="text-align:right;">打开文件并进行编辑</td>
+</tr>
+<tr>
+ <td style="text-align:left;">tree</td>
+ <td style="text-align:center;">tree -L number</td>
+ <td style="text-align:right;">显示当前路径下的“number”层文件</td>
+</tr>
+</tbody></table><div class="md-section-divider"></div><h4 data-anchor-id="9jow" id="24-常用快捷键与history命令">2.4 常用快捷键与history命令</h4><table data-anchor-id="mgn8" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th style="text-align:left;">快捷键</th>
+ <th style="text-align:center;">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td style="text-align:left;">tab</td>
+ <td style="text-align:center;">命令行自动补全</td>
+</tr>
+<tr>
+ <td style="text-align:left;">ctrl+c</td>
+ <td style="text-align:center;">强制退出当前进程</td>
+</tr>
+<tr>
+ <td style="text-align:left;">ctrl+l</td>
+ <td style="text-align:center;">清空当前界面</td>
+</tr>
+<tr>
+ <td style="text-align:left;">up/down</td>
+ <td style="text-align:center;">历史中的上一条/下一条命令</td>
+</tr>
+</tbody></table><p data-anchor-id="jfri">在Linux中，当你想要调取之前的命令时，你除了可以使用up/down键，还可以使用history命令显示更多的历史命令，如下：</p><blockquote data-anchor-id="rlqi" class="white-blockquote">
+  <p>$ history</p>
+</blockquote><p data-anchor-id="zv05">得到<img src="http://static.zybuluo.com/shawnpang/iqcszkz92d1z38i88xg0qytx/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-07-18%20%E4%B8%8A%E5%8D%888.46.36.png" alt="history" title=""> <br>
+想使用之前的命令方法如下</p><blockquote data-anchor-id="1k7i" class="white-blockquote">
+  <p>$ !509</p>
+</blockquote><p data-anchor-id="oljf">这样Linux就会执行第509条命令。</p><div class="md-section-divider"></div><h4 data-anchor-id="kv77" id="25-符号">2.5 "&gt;"符号</h4><blockquote data-anchor-id="76z8" class="white-blockquote">
+  <p>$ ls -lah &gt; /desktop/a.txt</p>
+</blockquote><p data-anchor-id="4uwh">利用“&gt;”符号可以将输出结果输入到a.txt文件中。</p></div>
+</body>
+</html>
