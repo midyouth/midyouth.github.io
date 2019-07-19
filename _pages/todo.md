@@ -5,9 +5,5 @@ permalink: /todo/
 author_profile: true
 ---
 
-- [ ] 学生测试题目检查
-- [ ] 准备内容 - 过一遍每一节课的内容
-- [ ] 过一遍所有的课件
-- [ ] 准备试讲
-
-
+1. 输入一个string，例如abcdefg，输出其倒序，例如gfedcba，不能够使用reverse()这个功能
+2. 输入一个
