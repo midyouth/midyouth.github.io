@@ -5,11 +5,12 @@ permalink: /todo/
 author_profile: true
 ---
 
-1. 题目：有四个数字：1、2、3、4，能组成多少个互不相同且无重复数字的三位数？各是多少？
-2. 题目：一个整数，它加上100后是一个完全平方数，再加上168又是一个完全平方数，请问该数是多少？
-3. 题目：输入三个整数x,y,z，请把这三个数由小到大输出。
-4. 题目：输入某年某月某日，判断这一天是这一年的第几天？
-5. 题目：输出 9*9 乘法口诀表。
-6. 题目：有一对兔子，从出生后第3个月起每个月都生一对兔子，小兔子长到第三个月后每个月又生一对兔子，假如兔子都不死，问每个月的兔子总数为多少？
-7. 题目：判断101-200之间有多少个素数，并输出所有素数。
-8. 题目：打印出所有的"水仙花数"，所谓"水仙花数"是指一个三位数，其各位数字立方和等于该数本身。例如：153是一个"水仙花数"，因为153=1的三次方＋5的三次方＋3的三次方。
+Session 4:
+* [Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/)
+* [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)
+* [To Lower Case](https://leetcode.com/problems/to-lower-case/)
+
+
+Session 5:
+* [Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/)
+* [Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/)
