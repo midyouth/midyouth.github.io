@@ -11,3 +11,4 @@ author_profile: true
 * [第四期Python的逻辑与循环](https://midyouth.github.io/files/2019/session4.html)
 * [第五期数据结构之美](https://midyouth.github.io/files/2019/session5.html)
 * [第六期Python中的函数与模块](https://midyouth.github.io/files/2019/session6.html)
+* [第七期计算机科学家的算法思维](https://midyouth.github.io/files/2019/session7.html)
